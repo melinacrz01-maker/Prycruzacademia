@@ -16,5 +16,18 @@ namespace Prycruzacademia
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmDatos ventana = new frmDatos();
+            ventana.ShowDialog();
+            this.Hide();
+        }
+
+        private void frmInicio_Load(object sender, EventArgs e)
+        {
+            DateTime varIncioSesion = DateTime.Now;
+
+        }
     }
 }

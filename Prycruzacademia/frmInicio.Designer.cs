@@ -28,20 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInicio));
+            this.btnInicio = new System.Windows.Forms.Button();
             this.lblBienvenido = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // btnInicio
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button1.ForeColor = System.Drawing.Color.Snow;
-            this.button1.Location = new System.Drawing.Point(111, 210);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(87, 29);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Iniciar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnInicio.ForeColor = System.Drawing.Color.Snow;
+            this.btnInicio.Location = new System.Drawing.Point(104, 185);
+            this.btnInicio.Name = "btnInicio";
+            this.btnInicio.Size = new System.Drawing.Size(87, 29);
+            this.btnInicio.TabIndex = 0;
+            this.btnInicio.Text = "Iniciar";
+            this.btnInicio.UseVisualStyleBackColor = false;
+            this.btnInicio.Click += new System.EventHandler(this.button1_Click);
             // 
             // lblBienvenido
             // 
@@ -59,13 +61,15 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Thistle;
-            this.ClientSize = new System.Drawing.Size(299, 271);
+            this.ClientSize = new System.Drawing.Size(288, 237);
             this.Controls.Add(this.lblBienvenido);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnInicio);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmInicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bienvenido..";
+            this.Load += new System.EventHandler(this.frmInicio_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -73,7 +77,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnInicio;
         private System.Windows.Forms.Label lblBienvenido;
     }
 }

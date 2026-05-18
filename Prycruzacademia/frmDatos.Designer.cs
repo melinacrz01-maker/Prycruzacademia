@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDatos));
             this.lblCodigo = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblPlan = new System.Windows.Forms.Label();
@@ -77,6 +78,8 @@
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(102, 20);
             this.txtCodigo.TabIndex = 3;
+            this.txtCodigo.TextChanged += new System.EventHandler(this.txtCodigo_TextChanged);
+            this.txtCodigo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCodigo_KeyPress);
             // 
             // txtNombre
             // 
@@ -88,7 +91,11 @@
             // cmbPlan
             // 
             this.cmbPlan.FormattingEnabled = true;
-            this.cmbPlan.Location = new System.Drawing.Point(92, 112);
+            this.cmbPlan.Items.AddRange(new object[] {
+            "Plan A",
+            "Plan B",
+            "Plan C"});
+            this.cmbPlan.Location = new System.Drawing.Point(111, 112);
             this.cmbPlan.Name = "cmbPlan";
             this.cmbPlan.Size = new System.Drawing.Size(121, 21);
             this.cmbPlan.TabIndex = 5;
@@ -116,20 +123,21 @@
             // 
             this.btnListado.BackColor = System.Drawing.Color.Indigo;
             this.btnListado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnListado.Location = new System.Drawing.Point(18, 207);
+            this.btnListado.ForeColor = System.Drawing.Color.Azure;
+            this.btnListado.Location = new System.Drawing.Point(46, 207);
             this.btnListado.Name = "btnListado";
             this.btnListado.Size = new System.Drawing.Size(75, 30);
             this.btnListado.TabIndex = 8;
             this.btnListado.Text = "Listado";
             this.btnListado.UseVisualStyleBackColor = false;
+            this.btnListado.Click += new System.EventHandler(this.btnListado_Click);
             // 
             // btncancelar
             // 
-            this.btncancelar.BackColor = System.Drawing.Color.Purple;
+            this.btncancelar.BackColor = System.Drawing.Color.Cornsilk;
             this.btncancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncancelar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btncancelar.Location = new System.Drawing.Point(124, 207);
+            this.btncancelar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btncancelar.Location = new System.Drawing.Point(127, 207);
             this.btncancelar.Name = "btncancelar";
             this.btncancelar.Size = new System.Drawing.Size(75, 30);
             this.btncancelar.TabIndex = 9;
@@ -138,15 +146,16 @@
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.BackColor = System.Drawing.Color.Pink;
+            this.btnRegistrar.BackColor = System.Drawing.Color.LightYellow;
             this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.btnRegistrar.Location = new System.Drawing.Point(221, 207);
+            this.btnRegistrar.Location = new System.Drawing.Point(208, 207);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(75, 30);
             this.btnRegistrar.TabIndex = 10;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = false;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // frmDatos
             // 
@@ -165,9 +174,11 @@
             this.Controls.Add(this.lblPlan);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblCodigo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmDatos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro..";
+            this.Load += new System.EventHandler(this.frmDatos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
