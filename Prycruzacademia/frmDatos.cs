@@ -45,10 +45,26 @@ namespace Prycruzacademia
                 txtCodigo.Focus();
                 return;
             }
-
-            
+            if (txtNombre.Text == "")
+            {
+                MessageBox.Show("Ingrese el nombre", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtNombre.Focus();
+                return;
+            }
+            if (cmbPlan.SelectedIndex == -1)
+            {
+                MessageBox.Show("Seleccione un plan", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cmbPlan.Focus();
+                return;
+            }
+            if (Chbarchivo.Checked == false)
+            {
+                MessageBox.Show("Seleccione el tipo de archivo", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                Chbarchivo.Focus();
+                return;
+            }
         }
-             
+
         private void frmDatos_Load(object sender, EventArgs e)
         {
             cmbPlan.Items.Clear();
@@ -58,6 +74,14 @@ namespace Prycruzacademia
             cmbPlan.SelectedIndex = 0;
 
 
+        }
+
+        private void btnPlancarga_Click(object sender, EventArgs e)
+        {
+            if (btnPlancarga.Text == "")
+            {
+                
+            }
         }
     }
 }
