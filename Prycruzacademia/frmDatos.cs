@@ -23,21 +23,32 @@ namespace Prycruzacademia
         }
 
         private void txtCodigo_KeyPress(object sender, KeyPressEventArgs e)
-          
-        { e.Handled = true; }
-            
+        { if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+
         private void btnListado_Click(object sender, EventArgs e)
         {
-
+            frmListado ventana = new frmListado();
+            ventana.ShowDialog();
+            this.Hide();
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtCodigo.Text))
-                MessageBox.Show("complete el codigo , campo obligatorio", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            txtCodigo.Focus();
-            return;
+            if (txtCodigo.Text == "")
+            {
+                MessageBox.Show("Ingrese el codigo", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtCodigo.Focus();
+                return;
+            }
+
+            
         }
+             
         private void frmDatos_Load(object sender, EventArgs e)
         {
             cmbPlan.Items.Clear();
