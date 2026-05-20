@@ -32,6 +32,7 @@
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.lblNombrePlan = new System.Windows.Forms.Label();
             this.txtPlanb = new System.Windows.Forms.TextBox();
+            this.lsPlanes = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // btnListar
@@ -43,6 +44,7 @@
             this.btnListar.TabIndex = 0;
             this.btnListar.Text = "Listar";
             this.btnListar.UseVisualStyleBackColor = false;
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
             // btnRegistrar
             // 
@@ -53,6 +55,7 @@
             this.btnRegistrar.TabIndex = 1;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = false;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // lblNombrePlan
             // 
@@ -71,11 +74,20 @@
             this.txtPlanb.Size = new System.Drawing.Size(156, 20);
             this.txtPlanb.TabIndex = 3;
             // 
+            // lsPlanes
+            // 
+            this.lsPlanes.FormattingEnabled = true;
+            this.lsPlanes.Location = new System.Drawing.Point(89, 157);
+            this.lsPlanes.Name = "lsPlanes";
+            this.lsPlanes.Size = new System.Drawing.Size(142, 82);
+            this.lsPlanes.TabIndex = 4;
+            // 
             // frmCargaPlan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(312, 181);
+            this.ClientSize = new System.Drawing.Size(312, 274);
+            this.Controls.Add(this.lsPlanes);
             this.Controls.Add(this.txtPlanb);
             this.Controls.Add(this.lblNombrePlan);
             this.Controls.Add(this.btnRegistrar);
@@ -93,5 +105,6 @@
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.Label lblNombrePlan;
         private System.Windows.Forms.TextBox txtPlanb;
+        private System.Windows.Forms.ListBox lsPlanes;
     }
 }

@@ -68,9 +68,9 @@ namespace Prycruzacademia
         private void frmDatos_Load(object sender, EventArgs e)
         {
             cmbPlan.Items.Clear();
-            cmbPlan.Items.Add("Plan A");
-            cmbPlan.Items.Add("Plan B");
-            cmbPlan.Items.Add("Plan C");
+            cmbPlan.Items.Add("Plan 1");
+            cmbPlan.Items.Add("Plan 2");
+            cmbPlan.Items.Add("Plan 3");
             cmbPlan.SelectedIndex = 0;
 
 
@@ -78,10 +78,20 @@ namespace Prycruzacademia
 
         private void btnPlancarga_Click(object sender, EventArgs e)
         {
-            if (btnPlancarga.Text == "")
-            {
-                
-            }
+            frmCargaPlan ventana = new frmCargaPlan();
+            ventana.ShowDialog();
+            this.Hide();
+        }
+
+        private void btncancelar_Click(object sender, EventArgs e)
+        {
+            txtCodigo.Clear();
+            txtNombre.Clear();
+            cmbPlan.SelectedIndex = -1;
+            Chbarchivo.Checked = false;
+
+            lblActivo.Text = "Activo";
+
         }
     }
 }
