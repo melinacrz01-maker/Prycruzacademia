@@ -43,6 +43,7 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tstriplblcargar = new System.Windows.Forms.ToolStripStatusLabel();
             this.btnPlancarga = new System.Windows.Forms.Button();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -165,7 +166,8 @@
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tstriplblcargar});
+            this.tstriplblcargar,
+            this.toolStripStatusLabel1});
             this.statusStrip1.Location = new System.Drawing.Point(0, 277);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(317, 22);
@@ -188,6 +190,12 @@
             this.btnPlancarga.Text = "Cargar Plan";
             this.btnPlancarga.UseVisualStyleBackColor = false;
             this.btnPlancarga.Click += new System.EventHandler(this.btnPlancarga_Click);
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(118, 17);
+            this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
             // 
             // frmDatos
             // 
@@ -236,5 +244,6 @@
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel tstriplblcargar;
         private System.Windows.Forms.Button btnPlancarga;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
     }
 }

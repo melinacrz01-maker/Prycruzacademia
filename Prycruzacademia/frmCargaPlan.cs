@@ -52,6 +52,22 @@ namespace Prycruzacademia
             }
             MessageBox.Show("Plan registrado: ", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void frmCargaPlan_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btncancelar_Click(object sender, EventArgs e)
+        {
+            txtPlanb.Clear();
+            lsPlanes.Items.Clear();
+        }
+
+        private void lsPlanes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }   
 

@@ -12,6 +12,9 @@ namespace Prycruzacademia
 {
     public partial class frmDatos : Form
     {
+        string[,] arrMaterias = new string[5, 4];
+        int indice = 0;
+
         public frmDatos()
         {
             InitializeComponent();
@@ -33,6 +36,9 @@ namespace Prycruzacademia
         private void btnListado_Click(object sender, EventArgs e)
         {
             frmListado ventana = new frmListado();
+
+            ventana.arrMateriasListado = arrMaterias;
+
             ventana.ShowDialog();
             this.Hide();
         }
@@ -63,6 +69,20 @@ namespace Prycruzacademia
                 Chbarchivo.Focus();
                 return;
             }
+
+            arrMaterias[indice, 0] = txtCodigo.Text;
+            arrMaterias[indice, 1] = txtNombre.Text;
+            arrMaterias[indice, 2] = cmbPlan.SelectedItem.ToString();
+            arrMaterias[indice, 3] = Chbarchivo.Checked ? "Activo" : "No Activo";
+            indice++;
+
+            MessageBox.Show("Registro exitoso.", "Registro Materia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            txtCodigo.Clear();
+            txtNombre.Clear();
+            cmbPlan.SelectedIndex = -1;
+            Chbarchivo.Checked = false;
+    
+            lblActivo.Text = "Activo";
         }
 
         private void frmDatos_Load(object sender, EventArgs e)
