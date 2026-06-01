@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmListado));
             this.grpListado = new System.Windows.Forms.GroupBox();
+            this.rbtBuscar = new System.Windows.Forms.RadioButton();
             this.cmbPlan = new System.Windows.Forms.ComboBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtCode = new System.Windows.Forms.TextBox();
@@ -39,7 +41,6 @@
             this.rdbCodigo = new System.Windows.Forms.RadioButton();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.dgvGrilla = new System.Windows.Forms.DataGridView();
-            this.rbtBuscar = new System.Windows.Forms.RadioButton();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -63,6 +64,20 @@
             this.grpListado.TabIndex = 0;
             this.grpListado.TabStop = false;
             this.grpListado.Text = "Buscar";
+            // 
+            // rbtBuscar
+            // 
+            this.rbtBuscar.AutoSize = true;
+            this.rbtBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtBuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.rbtBuscar.Location = new System.Drawing.Point(14, 28);
+            this.rbtBuscar.Name = "rbtBuscar";
+            this.rbtBuscar.Size = new System.Drawing.Size(57, 19);
+            this.rbtBuscar.TabIndex = 7;
+            this.rbtBuscar.TabStop = true;
+            this.rbtBuscar.Text = "Todo";
+            this.rbtBuscar.UseVisualStyleBackColor = true;
+            this.rbtBuscar.CheckedChanged += new System.EventHandler(this.rdbtodo_CheckedChanged);
             // 
             // cmbPlan
             // 
@@ -147,25 +162,21 @@
             this.Column5,
             this.Column2,
             this.Column3});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvGrilla.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvGrilla.Location = new System.Drawing.Point(224, 26);
             this.dgvGrilla.Name = "dgvGrilla";
-            this.dgvGrilla.Size = new System.Drawing.Size(442, 187);
+            this.dgvGrilla.RowHeadersVisible = false;
+            this.dgvGrilla.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgvGrilla.Size = new System.Drawing.Size(403, 187);
             this.dgvGrilla.TabIndex = 2;
             this.dgvGrilla.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGrilla_CellContentClick);
-            // 
-            // rbtBuscar
-            // 
-            this.rbtBuscar.AutoSize = true;
-            this.rbtBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtBuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.rbtBuscar.Location = new System.Drawing.Point(14, 28);
-            this.rbtBuscar.Name = "rbtBuscar";
-            this.rbtBuscar.Size = new System.Drawing.Size(57, 19);
-            this.rbtBuscar.TabIndex = 7;
-            this.rbtBuscar.TabStop = true;
-            this.rbtBuscar.Text = "Todo";
-            this.rbtBuscar.UseVisualStyleBackColor = true;
-            this.rbtBuscar.CheckedChanged += new System.EventHandler(this.rdbtodo_CheckedChanged);
             // 
             // Column1
             // 
@@ -194,7 +205,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(674, 226);
+            this.ClientSize = new System.Drawing.Size(633, 226);
             this.Controls.Add(this.dgvGrilla);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.grpListado);
@@ -203,6 +214,7 @@
             this.Name = "frmListado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Listado..";
+            this.Load += new System.EventHandler(this.frmListado_Load);
             this.grpListado.ResumeLayout(false);
             this.grpListado.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrilla)).EndInit();

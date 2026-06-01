@@ -42,8 +42,8 @@
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tstriplblcargar = new System.Windows.Forms.ToolStripStatusLabel();
-            this.btnPlancarga = new System.Windows.Forms.Button();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.btnPlancarga = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -95,6 +95,7 @@
             // 
             // cmbPlan
             // 
+            this.cmbPlan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPlan.FormattingEnabled = true;
             this.cmbPlan.Items.AddRange(new object[] {
             "Plan 1",
@@ -104,6 +105,7 @@
             this.cmbPlan.Name = "cmbPlan";
             this.cmbPlan.Size = new System.Drawing.Size(121, 21);
             this.cmbPlan.TabIndex = 5;
+            this.cmbPlan.SelectedIndexChanged += new System.EventHandler(this.cmbPlan_SelectedIndexChanged);
             // 
             // lblActivo
             // 
@@ -179,6 +181,12 @@
             this.tstriplblcargar.Name = "tstriplblcargar";
             this.tstriplblcargar.Size = new System.Drawing.Size(0, 17);
             // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(118, 17);
+            this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
+            // 
             // btnPlancarga
             // 
             this.btnPlancarga.BackColor = System.Drawing.Color.Yellow;
@@ -190,12 +198,6 @@
             this.btnPlancarga.Text = "Cargar Plan";
             this.btnPlancarga.UseVisualStyleBackColor = false;
             this.btnPlancarga.Click += new System.EventHandler(this.btnPlancarga_Click);
-            // 
-            // toolStripStatusLabel1
-            // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(118, 17);
-            this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
             // 
             // frmDatos
             // 

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCargaPlan));
             this.btnListar = new System.Windows.Forms.Button();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.lblNombrePlan = new System.Windows.Forms.Label();
@@ -106,6 +107,7 @@
             this.Controls.Add(this.lblNombrePlan);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.btnListar);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCargaPlan";
             this.Text = "frmCargaPlan";
             this.Load += new System.EventHandler(this.frmCargaPlan_Load);

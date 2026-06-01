@@ -46,11 +46,12 @@ namespace Prycruzacademia
 
         private void btnListar_Click(object sender, EventArgs e)
         {
+            lsPlanes.Items.Clear();
             for (int count = 0; count < indice; count++)
             {
                 lsPlanes.Items.Add(arrayPlanB[count]);
             }
-            MessageBox.Show("Plan registrado: ", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            
         }
 
         private void frmCargaPlan_Load(object sender, EventArgs e)

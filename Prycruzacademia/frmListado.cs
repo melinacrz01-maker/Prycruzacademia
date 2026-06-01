@@ -30,9 +30,10 @@ namespace Prycruzacademia
             {
                 for (int count = 0; count < arrMateriasListado.GetLength(1); count++)
                 {
-                    
-                    dgvGrilla.Rows.Add(arrMateriasListado[count, 0], arrMateriasListado[count, 1], arrMateriasListado[count, 2], arrMateriasListado[count, 3]);
-                    
+                    if (arrMateriasListado[count, 0] != null)
+                    {
+                        dgvGrilla.Rows.Add(arrMateriasListado[count, 0], arrMateriasListado[count, 1], arrMateriasListado[count, 2], arrMateriasListado[count, 3]);
+                    }
                 }
             }
         }
@@ -42,10 +43,15 @@ namespace Prycruzacademia
 
         private void dgvGrilla_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            
         }
 
         private void rdbtodo_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmListado_Load(object sender, EventArgs e)
         {
 
         }

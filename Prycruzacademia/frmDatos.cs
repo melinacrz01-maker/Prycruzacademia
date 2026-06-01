@@ -65,7 +65,7 @@ namespace Prycruzacademia
             }
             if (Chbarchivo.Checked == false)
             {
-                MessageBox.Show("Seleccione el tipo de archivo", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Seleccione el tipo de Activo", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 Chbarchivo.Focus();
                 return;
             }
@@ -100,7 +100,7 @@ namespace Prycruzacademia
         {
             frmCargaPlan ventana = new frmCargaPlan();
             ventana.ShowDialog();
-            this.Hide();
+            
         }
 
         private void btncancelar_Click(object sender, EventArgs e)
@@ -111,6 +111,11 @@ namespace Prycruzacademia
             Chbarchivo.Checked = false;
 
             lblActivo.Text = "Activo";
+
+        }
+
+        private void cmbPlan_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }
