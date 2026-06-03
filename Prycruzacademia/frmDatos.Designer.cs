@@ -98,9 +98,7 @@
             this.cmbPlan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPlan.FormattingEnabled = true;
             this.cmbPlan.Items.AddRange(new object[] {
-            "Plan 1",
-            "Plan 2",
-            "Plan 3"});
+            ""});
             this.cmbPlan.Location = new System.Drawing.Point(111, 112);
             this.cmbPlan.Name = "cmbPlan";
             this.cmbPlan.Size = new System.Drawing.Size(151, 21);
@@ -189,7 +187,7 @@
             // 
             // btnPlancarga
             // 
-            this.btnPlancarga.BackColor = System.Drawing.Color.Yellow;
+            this.btnPlancarga.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnPlancarga.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPlancarga.Location = new System.Drawing.Point(127, 149);
             this.btnPlancarga.Name = "btnPlancarga";

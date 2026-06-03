@@ -41,5 +41,16 @@ namespace Prycruzacademia
             frmCargaPlan frmCargaPlan = new frmCargaPlan();
             frmCargaPlan.ShowDialog();
         }
+
+        private void listadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListado frmListado = new frmListado();
+            frmListado.ShowDialog();
+        }
+
+        private void registroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

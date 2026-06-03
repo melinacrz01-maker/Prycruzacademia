@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAlumnos));
             this.lblDni = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblApellido = new System.Windows.Forms.Label();
+            this.lblDireccion = new System.Windows.Forms.Label();
             this.lblContacto = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblFecha = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.txtDireccion = new System.Windows.Forms.TextBox();
@@ -42,8 +42,8 @@
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.mskContacto = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.mskDni = new System.Windows.Forms.MaskedTextBox();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // lblDni
@@ -66,25 +66,25 @@
             this.lblName.TabIndex = 1;
             this.lblName.Text = "Nombre";
             // 
-            // label3
+            // lblApellido
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(23, 126);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 15);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Apellido";
+            this.lblApellido.AutoSize = true;
+            this.lblApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblApellido.Location = new System.Drawing.Point(23, 126);
+            this.lblApellido.Name = "lblApellido";
+            this.lblApellido.Size = new System.Drawing.Size(59, 15);
+            this.lblApellido.TabIndex = 2;
+            this.lblApellido.Text = "Apellido";
             // 
-            // label4
+            // lblDireccion
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(227, 46);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 15);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Direcciòn";
+            this.lblDireccion.AutoSize = true;
+            this.lblDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDireccion.Location = new System.Drawing.Point(227, 46);
+            this.lblDireccion.Name = "lblDireccion";
+            this.lblDireccion.Size = new System.Drawing.Size(68, 15);
+            this.lblDireccion.TabIndex = 3;
+            this.lblDireccion.Text = "Direcciòn";
             // 
             // lblContacto
             // 
@@ -96,15 +96,15 @@
             this.lblContacto.TabIndex = 4;
             this.lblContacto.Text = "Contacto";
             // 
-            // label1
+            // lblFecha
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(227, 126);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(143, 15);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Fecha de Nacimiento";
+            this.lblFecha.AutoSize = true;
+            this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFecha.Location = new System.Drawing.Point(227, 126);
+            this.lblFecha.Name = "lblFecha";
+            this.lblFecha.Size = new System.Drawing.Size(143, 15);
+            this.lblFecha.TabIndex = 5;
+            this.lblFecha.Text = "Fecha de Nacimiento";
             // 
             // txtNombre
             // 
@@ -160,27 +160,27 @@
             // mskContacto
             // 
             this.mskContacto.Location = new System.Drawing.Point(297, 85);
-            this.mskContacto.Mask = "(        ) __  ___  ___";
+            this.mskContacto.Mask = "(999)000-0000";
             this.mskContacto.Name = "mskContacto";
             this.mskContacto.Size = new System.Drawing.Size(108, 20);
             this.mskContacto.TabIndex = 14;
             // 
-            // maskedTextBox2
+            // mskDni
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(61, 45);
-            this.maskedTextBox2.Mask = "99999";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox2.TabIndex = 16;
-            this.maskedTextBox2.ValidatingType = typeof(int);
+            this.mskDni.Location = new System.Drawing.Point(61, 45);
+            this.mskDni.Mask = "99999";
+            this.mskDni.Name = "mskDni";
+            this.mskDni.Size = new System.Drawing.Size(100, 20);
+            this.mskDni.TabIndex = 16;
+            this.mskDni.ValidatingType = typeof(int);
             // 
-            // dateTimePicker1
+            // dtpFecha
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(376, 126);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(115, 20);
-            this.dateTimePicker1.TabIndex = 17;
+            this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFecha.Location = new System.Drawing.Point(376, 126);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(115, 20);
+            this.dtpFecha.TabIndex = 17;
             // 
             // frmAlumnos
             // 
@@ -188,8 +188,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(510, 207);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.maskedTextBox2);
+            this.Controls.Add(this.dtpFecha);
+            this.Controls.Add(this.mskDni);
             this.Controls.Add(this.mskContacto);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnEdit);
@@ -197,10 +197,10 @@
             this.Controls.Add(this.txtDireccion);
             this.Controls.Add(this.txtApellido);
             this.Controls.Add(this.txtNombre);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblFecha);
             this.Controls.Add(this.lblContacto);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblDireccion);
+            this.Controls.Add(this.lblApellido);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.lblDni);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -215,10 +215,10 @@
 
         private System.Windows.Forms.Label lblDni;
         private System.Windows.Forms.Label lblName;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblApellido;
+        private System.Windows.Forms.Label lblDireccion;
         private System.Windows.Forms.Label lblContacto;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.TextBox txtDireccion;
@@ -226,7 +226,7 @@
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.MaskedTextBox mskContacto;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.MaskedTextBox mskDni;
+        private System.Windows.Forms.DateTimePicker dtpFecha;
     }
 }

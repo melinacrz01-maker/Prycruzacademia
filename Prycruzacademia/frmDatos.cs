@@ -65,9 +65,7 @@ namespace Prycruzacademia
             }
             if (Chbarchivo.Checked == false)
             {
-                MessageBox.Show("Seleccione el tipo de Activo", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                Chbarchivo.Focus();
-                return;
+                
             }
 
             arrMaterias[indice, 0] = txtCodigo.Text;
