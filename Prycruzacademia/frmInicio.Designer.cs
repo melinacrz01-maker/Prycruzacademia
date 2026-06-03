@@ -35,7 +35,7 @@
             // 
             // btnInicio
             // 
-            this.btnInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnInicio.BackColor = System.Drawing.SystemColors.ControlText;
             this.btnInicio.ForeColor = System.Drawing.Color.Snow;
             this.btnInicio.Location = new System.Drawing.Point(104, 185);
             this.btnInicio.Name = "btnInicio";
@@ -48,6 +48,7 @@
             // lblBienvenido
             // 
             this.lblBienvenido.AutoSize = true;
+            this.lblBienvenido.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.lblBienvenido.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBienvenido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lblBienvenido.Location = new System.Drawing.Point(62, 63);

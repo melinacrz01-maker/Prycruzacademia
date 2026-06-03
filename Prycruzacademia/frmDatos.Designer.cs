@@ -81,7 +81,7 @@
             // 
             this.txtCodigo.Location = new System.Drawing.Point(111, 39);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(102, 20);
+            this.txtCodigo.Size = new System.Drawing.Size(151, 20);
             this.txtCodigo.TabIndex = 3;
             this.txtCodigo.TextChanged += new System.EventHandler(this.txtCodigo_TextChanged);
             this.txtCodigo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCodigo_KeyPress);
@@ -90,7 +90,7 @@
             // 
             this.txtNombre.Location = new System.Drawing.Point(112, 75);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(101, 20);
+            this.txtNombre.Size = new System.Drawing.Size(150, 20);
             this.txtNombre.TabIndex = 4;
             // 
             // cmbPlan
@@ -103,7 +103,7 @@
             "Plan 3"});
             this.cmbPlan.Location = new System.Drawing.Point(111, 112);
             this.cmbPlan.Name = "cmbPlan";
-            this.cmbPlan.Size = new System.Drawing.Size(121, 21);
+            this.cmbPlan.Size = new System.Drawing.Size(151, 21);
             this.cmbPlan.TabIndex = 5;
             this.cmbPlan.SelectedIndexChanged += new System.EventHandler(this.cmbPlan_SelectedIndexChanged);
             // 
@@ -131,7 +131,7 @@
             this.btnListado.BackColor = System.Drawing.Color.Blue;
             this.btnListado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnListado.ForeColor = System.Drawing.Color.Azure;
-            this.btnListado.Location = new System.Drawing.Point(46, 207);
+            this.btnListado.Location = new System.Drawing.Point(39, 207);
             this.btnListado.Name = "btnListado";
             this.btnListado.Size = new System.Drawing.Size(75, 30);
             this.btnListado.TabIndex = 8;
@@ -144,7 +144,7 @@
             this.btncancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btncancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncancelar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.btncancelar.Location = new System.Drawing.Point(127, 207);
+            this.btncancelar.Location = new System.Drawing.Point(112, 207);
             this.btncancelar.Name = "btncancelar";
             this.btncancelar.Size = new System.Drawing.Size(75, 30);
             this.btncancelar.TabIndex = 9;
@@ -157,7 +157,7 @@
             this.btnRegistrar.BackColor = System.Drawing.Color.LimeGreen;
             this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.btnRegistrar.Location = new System.Drawing.Point(208, 207);
+            this.btnRegistrar.Location = new System.Drawing.Point(187, 207);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(75, 30);
             this.btnRegistrar.TabIndex = 10;
@@ -221,7 +221,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmDatos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Registro..";
+            this.Text = "Registro";
             this.Load += new System.EventHandler(this.frmDatos_Load);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();

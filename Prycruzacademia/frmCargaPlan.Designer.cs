@@ -109,6 +109,7 @@
             this.Controls.Add(this.btnListar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCargaPlan";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCargaPlan";
             this.Load += new System.EventHandler(this.frmCargaPlan_Load);
             this.ResumeLayout(false);

@@ -91,14 +91,14 @@
             // 
             this.txtName.Location = new System.Drawing.Point(88, 81);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(78, 20);
+            this.txtName.Size = new System.Drawing.Size(90, 20);
             this.txtName.TabIndex = 5;
             // 
             // txtCode
             // 
-            this.txtCode.Location = new System.Drawing.Point(88, 54);
+            this.txtCode.Location = new System.Drawing.Point(90, 55);
             this.txtCode.Name = "txtCode";
-            this.txtCode.Size = new System.Drawing.Size(65, 20);
+            this.txtCode.Size = new System.Drawing.Size(88, 20);
             this.txtCode.TabIndex = 4;
             // 
             // rdbPlan
@@ -142,7 +142,7 @@
             // 
             // btnBuscar
             // 
-            this.btnBuscar.BackColor = System.Drawing.Color.Yellow;
+            this.btnBuscar.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.ForeColor = System.Drawing.Color.Black;
             this.btnBuscar.Location = new System.Drawing.Point(135, 182);
@@ -165,7 +165,7 @@
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.MistyRose;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
@@ -213,7 +213,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmListado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Listado..";
+            this.Text = "Listado";
             this.Load += new System.EventHandler(this.frmListado_Load);
             this.grpListado.ResumeLayout(false);
             this.grpListado.PerformLayout();

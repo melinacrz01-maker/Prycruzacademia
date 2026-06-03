@@ -19,9 +19,8 @@ namespace Prycruzacademia
 
         private void button1_Click(object sender, EventArgs e)
         {
-            frmDatos ventana = new frmDatos();
+            frmPrincipal ventana = new frmPrincipal();
             ventana.ShowDialog();
-            this.Hide();
         }
 
         private void frmInicio_Load(object sender, EventArgs e)
