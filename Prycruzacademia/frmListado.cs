@@ -68,5 +68,10 @@ namespace Prycruzacademia
             this.Close();
 
         }
+
+        private void cmbPlan_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
