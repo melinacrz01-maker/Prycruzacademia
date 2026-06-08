@@ -19,9 +19,28 @@ namespace Prycruzacademia
 
         private void btnvolver_Click(object sender, EventArgs e)
         {
+            this.Hide();
             frmPrincipal frmPrincipal = new frmPrincipal();
             frmPrincipal.Show();
-            this.Hide();
+
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            mskDni.Clear();
+            txtNombre.Clear();
+            txtApellido.Clear();
+            txtDireccion.Clear();
+            mskContacto.Clear();
+            dtpFecha.Value = DateTime.Today;
+
+           
+
+        }
+
+        private void frmAlumnos_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

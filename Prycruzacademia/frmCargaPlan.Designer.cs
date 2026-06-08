@@ -35,12 +35,13 @@
             this.txtPlanb = new System.Windows.Forms.TextBox();
             this.lsPlanes = new System.Windows.Forms.ListBox();
             this.btncancelar = new System.Windows.Forms.Button();
+            this.btnvolver = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnListar
             // 
             this.btnListar.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnListar.Location = new System.Drawing.Point(15, 184);
+            this.btnListar.Location = new System.Drawing.Point(15, 210);
             this.btnListar.Name = "btnListar";
             this.btnListar.Size = new System.Drawing.Size(67, 31);
             this.btnListar.TabIndex = 0;
@@ -51,7 +52,7 @@
             // btnRegistrar
             // 
             this.btnRegistrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnRegistrar.Location = new System.Drawing.Point(187, 184);
+            this.btnRegistrar.Location = new System.Drawing.Point(188, 210);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(67, 31);
             this.btnRegistrar.TabIndex = 1;
@@ -63,7 +64,7 @@
             // 
             this.lblNombrePlan.AutoSize = true;
             this.lblNombrePlan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombrePlan.Location = new System.Drawing.Point(12, 21);
+            this.lblNombrePlan.Location = new System.Drawing.Point(13, 34);
             this.lblNombrePlan.Name = "lblNombrePlan";
             this.lblNombrePlan.Size = new System.Drawing.Size(123, 16);
             this.lblNombrePlan.TabIndex = 2;
@@ -71,7 +72,7 @@
             // 
             // txtPlanb
             // 
-            this.txtPlanb.Location = new System.Drawing.Point(141, 21);
+            this.txtPlanb.Location = new System.Drawing.Point(142, 34);
             this.txtPlanb.Name = "txtPlanb";
             this.txtPlanb.Size = new System.Drawing.Size(113, 20);
             this.txtPlanb.TabIndex = 3;
@@ -79,7 +80,7 @@
             // lsPlanes
             // 
             this.lsPlanes.FormattingEnabled = true;
-            this.lsPlanes.Location = new System.Drawing.Point(15, 47);
+            this.lsPlanes.Location = new System.Drawing.Point(16, 70);
             this.lsPlanes.Name = "lsPlanes";
             this.lsPlanes.Size = new System.Drawing.Size(239, 121);
             this.lsPlanes.TabIndex = 4;
@@ -88,7 +89,7 @@
             // btncancelar
             // 
             this.btncancelar.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.btncancelar.Location = new System.Drawing.Point(101, 184);
+            this.btncancelar.Location = new System.Drawing.Point(101, 210);
             this.btncancelar.Name = "btncancelar";
             this.btncancelar.Size = new System.Drawing.Size(69, 31);
             this.btncancelar.TabIndex = 5;
@@ -96,11 +97,24 @@
             this.btncancelar.UseVisualStyleBackColor = false;
             this.btncancelar.Click += new System.EventHandler(this.btncancelar_Click);
             // 
+            // btnvolver
+            // 
+            this.btnvolver.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnvolver.Location = new System.Drawing.Point(16, 8);
+            this.btnvolver.Name = "btnvolver";
+            this.btnvolver.Size = new System.Drawing.Size(75, 23);
+            this.btnvolver.TabIndex = 6;
+            this.btnvolver.Text = "Volver";
+            this.btnvolver.UseVisualStyleBackColor = false;
+            this.btnvolver.Click += new System.EventHandler(this.btnvolver_Click);
+            // 
             // frmCargaPlan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(267, 227);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(267, 276);
+            this.Controls.Add(this.btnvolver);
             this.Controls.Add(this.btncancelar);
             this.Controls.Add(this.lsPlanes);
             this.Controls.Add(this.txtPlanb);
@@ -125,5 +139,6 @@
         private System.Windows.Forms.TextBox txtPlanb;
         private System.Windows.Forms.ListBox lsPlanes;
         private System.Windows.Forms.Button btncancelar;
+        private System.Windows.Forms.Button btnvolver;
     }
 }

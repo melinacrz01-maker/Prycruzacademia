@@ -116,5 +116,12 @@ namespace Prycruzacademia
         {
 
         }
+
+        private void btnvolver_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmPrincipal frmPrincipal = new frmPrincipal();
+            frmPrincipal.ShowDialog();
+        }
     }
 }

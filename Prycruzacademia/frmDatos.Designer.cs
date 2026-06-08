@@ -42,8 +42,8 @@
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tstriplblcargar = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.btnPlancarga = new System.Windows.Forms.Button();
+            this.btnvolver = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -98,7 +98,9 @@
             this.cmbPlan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPlan.FormattingEnabled = true;
             this.cmbPlan.Items.AddRange(new object[] {
-            ""});
+            "1",
+            "2",
+            "3"});
             this.cmbPlan.Location = new System.Drawing.Point(111, 112);
             this.cmbPlan.Name = "cmbPlan";
             this.cmbPlan.Size = new System.Drawing.Size(151, 21);
@@ -166,9 +168,8 @@
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tstriplblcargar,
-            this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 277);
+            this.tstriplblcargar});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 253);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(317, 22);
             this.statusStrip1.TabIndex = 11;
@@ -178,12 +179,6 @@
             // 
             this.tstriplblcargar.Name = "tstriplblcargar";
             this.tstriplblcargar.Size = new System.Drawing.Size(0, 17);
-            // 
-            // toolStripStatusLabel1
-            // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(118, 17);
-            this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
             // 
             // btnPlancarga
             // 
@@ -197,12 +192,24 @@
             this.btnPlancarga.UseVisualStyleBackColor = false;
             this.btnPlancarga.Click += new System.EventHandler(this.btnPlancarga_Click);
             // 
+            // btnvolver
+            // 
+            this.btnvolver.BackColor = System.Drawing.Color.LightGray;
+            this.btnvolver.Location = new System.Drawing.Point(10, 12);
+            this.btnvolver.Name = "btnvolver";
+            this.btnvolver.Size = new System.Drawing.Size(75, 23);
+            this.btnvolver.TabIndex = 13;
+            this.btnvolver.Text = "Volver";
+            this.btnvolver.UseVisualStyleBackColor = false;
+            this.btnvolver.Click += new System.EventHandler(this.btnvolver_Click);
+            // 
             // frmDatos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(317, 299);
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ClientSize = new System.Drawing.Size(317, 275);
+            this.Controls.Add(this.btnvolver);
             this.Controls.Add(this.btnPlancarga);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.btnRegistrar);
@@ -244,6 +251,6 @@
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel tstriplblcargar;
         private System.Windows.Forms.Button btnPlancarga;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.Button btnvolver;
     }
 }

@@ -157,6 +157,7 @@
             this.btnEliminar.TabIndex = 13;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // mskContacto
             // 
@@ -186,7 +187,7 @@
             // btnvolver
             // 
             this.btnvolver.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.btnvolver.Location = new System.Drawing.Point(7, 12);
+            this.btnvolver.Location = new System.Drawing.Point(12, 12);
             this.btnvolver.Name = "btnvolver";
             this.btnvolver.Size = new System.Drawing.Size(75, 23);
             this.btnvolver.TabIndex = 18;
@@ -220,6 +221,7 @@
             this.Name = "frmAlumnos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cargar Alumnos ";
+            this.Load += new System.EventHandler(this.frmAlumnos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

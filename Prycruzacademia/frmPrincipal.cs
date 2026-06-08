@@ -19,7 +19,7 @@ namespace Prycruzacademia
 
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
-            Text = DateTime.Now.ToString("dd/MM/yyyy");
+            lblfecha.Text = DateTime.Now.ToString("dd/MM/yyyy");
         }
 
         private void alumnosToolStripMenuItem_Click(object sender, EventArgs e)

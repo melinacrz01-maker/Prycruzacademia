@@ -35,7 +35,6 @@
             this.rbtBuscar = new System.Windows.Forms.RadioButton();
             this.cmbPlan = new System.Windows.Forms.ComboBox();
             this.txtName = new System.Windows.Forms.TextBox();
-            this.txtCode = new System.Windows.Forms.TextBox();
             this.rdbPlan = new System.Windows.Forms.RadioButton();
             this.rdbNombre = new System.Windows.Forms.RadioButton();
             this.rdbCodigo = new System.Windows.Forms.RadioButton();
@@ -46,16 +45,17 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnvolver = new System.Windows.Forms.Button();
+            this.mskcode = new System.Windows.Forms.MaskedTextBox();
             this.grpListado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrilla)).BeginInit();
             this.SuspendLayout();
             // 
             // grpListado
             // 
+            this.grpListado.Controls.Add(this.mskcode);
             this.grpListado.Controls.Add(this.rbtBuscar);
             this.grpListado.Controls.Add(this.cmbPlan);
             this.grpListado.Controls.Add(this.txtName);
-            this.grpListado.Controls.Add(this.txtCode);
             this.grpListado.Controls.Add(this.rdbPlan);
             this.grpListado.Controls.Add(this.rdbNombre);
             this.grpListado.Controls.Add(this.rdbCodigo);
@@ -97,13 +97,6 @@
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(90, 20);
             this.txtName.TabIndex = 5;
-            // 
-            // txtCode
-            // 
-            this.txtCode.Location = new System.Drawing.Point(90, 55);
-            this.txtCode.Name = "txtCode";
-            this.txtCode.Size = new System.Drawing.Size(88, 20);
-            this.txtCode.TabIndex = 4;
             // 
             // rdbPlan
             // 
@@ -216,6 +209,15 @@
             this.btnvolver.UseVisualStyleBackColor = false;
             this.btnvolver.Click += new System.EventHandler(this.btnvolver_Click);
             // 
+            // mskcode
+            // 
+            this.mskcode.Location = new System.Drawing.Point(90, 53);
+            this.mskcode.Mask = "99999";
+            this.mskcode.Name = "mskcode";
+            this.mskcode.Size = new System.Drawing.Size(88, 20);
+            this.mskcode.TabIndex = 4;
+            this.mskcode.ValidatingType = typeof(int);
+            // 
             // frmListado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -243,7 +245,6 @@
 
         private System.Windows.Forms.GroupBox grpListado;
         private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.TextBox txtCode;
         private System.Windows.Forms.RadioButton rdbPlan;
         private System.Windows.Forms.RadioButton rdbNombre;
         private System.Windows.Forms.RadioButton rdbCodigo;
@@ -256,5 +257,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.Button btnvolver;
+        private System.Windows.Forms.MaskedTextBox mskcode;
     }
 }
