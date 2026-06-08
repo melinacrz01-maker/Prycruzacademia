@@ -45,6 +45,7 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnvolver = new System.Windows.Forms.Button();
             this.grpListado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrilla)).BeginInit();
             this.SuspendLayout();
@@ -58,12 +59,13 @@
             this.grpListado.Controls.Add(this.rdbPlan);
             this.grpListado.Controls.Add(this.rdbNombre);
             this.grpListado.Controls.Add(this.rdbCodigo);
-            this.grpListado.Location = new System.Drawing.Point(12, 26);
+            this.grpListado.Location = new System.Drawing.Point(12, 37);
             this.grpListado.Name = "grpListado";
             this.grpListado.Size = new System.Drawing.Size(206, 150);
             this.grpListado.TabIndex = 0;
             this.grpListado.TabStop = false;
             this.grpListado.Text = "Buscar";
+            this.grpListado.Enter += new System.EventHandler(this.grpListado_Enter);
             // 
             // rbtBuscar
             // 
@@ -145,7 +147,7 @@
             this.btnBuscar.BackColor = System.Drawing.Color.Silver;
             this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.ForeColor = System.Drawing.Color.Black;
-            this.btnBuscar.Location = new System.Drawing.Point(135, 182);
+            this.btnBuscar.Location = new System.Drawing.Point(135, 193);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(83, 31);
             this.btnBuscar.TabIndex = 1;
@@ -170,7 +172,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvGrilla.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvGrilla.Location = new System.Drawing.Point(224, 26);
+            this.dgvGrilla.Location = new System.Drawing.Point(224, 37);
             this.dgvGrilla.Name = "dgvGrilla";
             this.dgvGrilla.RowHeadersVisible = false;
             this.dgvGrilla.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
@@ -200,12 +202,25 @@
             this.Column3.HeaderText = "Activo";
             this.Column3.Name = "Column3";
             // 
+            // btnvolver
+            // 
+            this.btnvolver.BackColor = System.Drawing.Color.Silver;
+            this.btnvolver.ForeColor = System.Drawing.Color.Black;
+            this.btnvolver.Location = new System.Drawing.Point(12, 6);
+            this.btnvolver.Name = "btnvolver";
+            this.btnvolver.Size = new System.Drawing.Size(71, 25);
+            this.btnvolver.TabIndex = 3;
+            this.btnvolver.Text = "Volver";
+            this.btnvolver.UseVisualStyleBackColor = false;
+            this.btnvolver.Click += new System.EventHandler(this.btnvolver_Click);
+            // 
             // frmListado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(633, 226);
+            this.ClientSize = new System.Drawing.Size(633, 247);
+            this.Controls.Add(this.btnvolver);
             this.Controls.Add(this.dgvGrilla);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.grpListado);
@@ -238,5 +253,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.Button btnvolver;
     }
 }

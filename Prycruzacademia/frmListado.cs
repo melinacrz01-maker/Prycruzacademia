@@ -55,5 +55,18 @@ namespace Prycruzacademia
         {
 
         }
+
+        private void grpListado_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnvolver_Click(object sender, EventArgs e)
+        {
+            frmPrincipal frmPrincipal = new frmPrincipal();
+            frmPrincipal.Show();
+            this.Close();
+
+        }
     }
 }

@@ -44,6 +44,7 @@
             this.mskContacto = new System.Windows.Forms.MaskedTextBox();
             this.mskDni = new System.Windows.Forms.MaskedTextBox();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
+            this.btnvolver = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblDni
@@ -182,12 +183,24 @@
             this.dtpFecha.Size = new System.Drawing.Size(115, 20);
             this.dtpFecha.TabIndex = 17;
             // 
+            // btnvolver
+            // 
+            this.btnvolver.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnvolver.Location = new System.Drawing.Point(7, 12);
+            this.btnvolver.Name = "btnvolver";
+            this.btnvolver.Size = new System.Drawing.Size(75, 23);
+            this.btnvolver.TabIndex = 18;
+            this.btnvolver.Text = "Volver";
+            this.btnvolver.UseVisualStyleBackColor = false;
+            this.btnvolver.Click += new System.EventHandler(this.btnvolver_Click);
+            // 
             // frmAlumnos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(510, 207);
+            this.Controls.Add(this.btnvolver);
             this.Controls.Add(this.dtpFecha);
             this.Controls.Add(this.mskDni);
             this.Controls.Add(this.mskContacto);
@@ -205,6 +218,7 @@
             this.Controls.Add(this.lblDni);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmAlumnos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cargar Alumnos ";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -228,5 +242,6 @@
         private System.Windows.Forms.MaskedTextBox mskContacto;
         private System.Windows.Forms.MaskedTextBox mskDni;
         private System.Windows.Forms.DateTimePicker dtpFecha;
+        private System.Windows.Forms.Button btnvolver;
     }
 }
