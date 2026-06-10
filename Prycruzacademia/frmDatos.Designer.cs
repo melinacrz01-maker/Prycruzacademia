@@ -131,7 +131,7 @@
             this.btnListado.BackColor = System.Drawing.Color.Blue;
             this.btnListado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnListado.ForeColor = System.Drawing.Color.Azure;
-            this.btnListado.Location = new System.Drawing.Point(39, 207);
+            this.btnListado.Location = new System.Drawing.Point(29, 205);
             this.btnListado.Name = "btnListado";
             this.btnListado.Size = new System.Drawing.Size(75, 30);
             this.btnListado.TabIndex = 8;
@@ -144,7 +144,7 @@
             this.btncancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btncancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncancelar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.btncancelar.Location = new System.Drawing.Point(112, 207);
+            this.btncancelar.Location = new System.Drawing.Point(127, 205);
             this.btncancelar.Name = "btncancelar";
             this.btncancelar.Size = new System.Drawing.Size(75, 30);
             this.btncancelar.TabIndex = 9;
@@ -157,7 +157,7 @@
             this.btnRegistrar.BackColor = System.Drawing.Color.LimeGreen;
             this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.btnRegistrar.Location = new System.Drawing.Point(187, 207);
+            this.btnRegistrar.Location = new System.Drawing.Point(221, 205);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(75, 30);
             this.btnRegistrar.TabIndex = 10;
@@ -169,9 +169,9 @@
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tstriplblcargar});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 253);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 256);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(317, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(308, 22);
             this.statusStrip1.TabIndex = 11;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -195,7 +195,7 @@
             // btnvolver
             // 
             this.btnvolver.BackColor = System.Drawing.Color.LightGray;
-            this.btnvolver.Location = new System.Drawing.Point(10, 12);
+            this.btnvolver.Location = new System.Drawing.Point(10, 3);
             this.btnvolver.Name = "btnvolver";
             this.btnvolver.Size = new System.Drawing.Size(75, 23);
             this.btnvolver.TabIndex = 13;
@@ -208,7 +208,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(317, 275);
+            this.ClientSize = new System.Drawing.Size(308, 278);
             this.Controls.Add(this.btnvolver);
             this.Controls.Add(this.btnPlancarga);
             this.Controls.Add(this.statusStrip1);

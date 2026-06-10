@@ -12,9 +12,25 @@ namespace Prycruzacademia
 {
     public partial class frmAlumnos : Form
     {
-        public frmAlumnos()
+
+        string[] dni;
+        string[] nombre;
+        string[] apellido;
+        string[] direccion;
+        string[] contacto;
+        string[] fecha;
+        int indice = 0;
+        public frmAlumnos(string[] arrDni, string[] arrNombre, string[] arrApellido, string[] arrDireccion, string[] arrContacto, string[] arrFecha)
+            
         {
             InitializeComponent();
+            dni = arrDni;
+            nombre = arrNombre;
+            apellido = arrApellido;
+            direccion = arrDireccion;
+            contacto = arrContacto;
+            fecha = arrFecha;
+
         }
 
         private void btnvolver_Click(object sender, EventArgs e)
@@ -40,6 +56,13 @@ namespace Prycruzacademia
 
         private void frmAlumnos_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnListardatos_Click(object sender, EventArgs e)
+        {
+            frmListado ventaListado = new frmListado();
+            ventaListado.Show();
 
         }
     }

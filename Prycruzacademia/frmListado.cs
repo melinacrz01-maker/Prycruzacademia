@@ -13,6 +13,12 @@ namespace Prycruzacademia
     public partial class frmListado : Form
     {
         private string[,] arrMateriasListado = new string[4, 5];
+
+        public frmListado()
+        {
+            InitializeComponent();
+        }
+
         public frmListado(string[,] materiasListado)
         {
             InitializeComponent();

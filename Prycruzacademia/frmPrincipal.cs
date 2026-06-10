@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Versioning;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,7 +14,7 @@ namespace Prycruzacademia
     public partial class frmPrincipal : Form
     {
         private string[,] arrMaterias = new string[5, 4];
-        private string[] arrPlan= new string[5];
+        private string[] arrPlan = new string[5];
 
         public frmPrincipal()
         {
@@ -36,8 +37,7 @@ namespace Prycruzacademia
 
         private void alumnosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmAlumnos frmAlumnos = new frmAlumnos();
-            frmAlumnos.ShowDialog();
+            
 
 
         }
@@ -64,5 +64,21 @@ namespace Prycruzacademia
         {
 
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("¿Está seguro que desea salir?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
     }
+
 }
