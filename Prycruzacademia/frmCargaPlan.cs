@@ -13,11 +13,12 @@ namespace Prycruzacademia
 {
     public partial class frmCargaPlan : Form
     {
-        string[] arrayPlanB = new string[10];
+        string[] arrayPlanB = new string[5];
         int indice = 0;
-        public frmCargaPlan()
+        public frmCargaPlan(string[] arrPlan)
         {
             InitializeComponent();
+            arrayPlanB = arrPlan;
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
@@ -47,11 +48,14 @@ namespace Prycruzacademia
         private void btnListar_Click(object sender, EventArgs e)
         {
             lsPlanes.Items.Clear();
-            for (int count = 0; count < indice; count++)
+
+            for (int count = 0; count < arrayPlanB.Length; count++)
             {
-                lsPlanes.Items.Add(arrayPlanB[count]);
-            }
-            
+                if (arrayPlanB[count] != null)
+                {
+                    lsPlanes.Items.Add(arrayPlanB[count]);
+                }
+            }            
         }
 
         private void frmCargaPlan_Load(object sender, EventArgs e)
@@ -73,7 +77,7 @@ namespace Prycruzacademia
         private void btnvolver_Click(object sender, EventArgs e)
         {
             this.Hide();
-            frmPrincipal frmPrincipal = new frmPrincipal();
+            frmPrincipal frmPrincipal = new frmPrincipal(arrayPlanB);
             frmPrincipal.ShowDialog();
         }
     }

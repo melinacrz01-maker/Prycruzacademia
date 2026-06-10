@@ -12,10 +12,11 @@ namespace Prycruzacademia
 {
     public partial class frmListado : Form
     {
-        public string[,] arrMateriasListado = new string[4, 5];
-        public frmListado()
+        private string[,] arrMateriasListado = new string[4, 5];
+        public frmListado(string[,] materiasListado)
         {
             InitializeComponent();
+            arrMateriasListado = materiasListado;
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)

@@ -12,12 +12,15 @@ namespace Prycruzacademia
 {
     public partial class frmDatos : Form
     {
-        string[,] arrMaterias = new string[5, 4];
+        private string[,] arrMaterias = new string[5, 4];
+        private string[] arrPlan = new string[5];
         int indice = 0;
 
-        public frmDatos()
+        public frmDatos(string[,] materias, string[] arrPlan)
         {
             InitializeComponent();
+            arrMaterias = materias;
+            this.arrPlan = arrPlan;
         }
 
         private void txtCodigo_TextChanged(object sender, EventArgs e)
@@ -35,9 +38,7 @@ namespace Prycruzacademia
 
         private void btnListado_Click(object sender, EventArgs e)
         {
-            frmListado ventana = new frmListado();
-
-            ventana.arrMateriasListado = arrMaterias;
+            frmListado ventana = new frmListado(arrMaterias);
 
             ventana.ShowDialog();
             this.Hide();
@@ -86,17 +87,21 @@ namespace Prycruzacademia
         private void frmDatos_Load(object sender, EventArgs e)
         {
             cmbPlan.Items.Clear();
-            cmbPlan.Items.Add("Plan 1");
-            cmbPlan.Items.Add("Plan 2");
-            cmbPlan.Items.Add("Plan 3");
+
+            for (int i = 0; i < arrPlan.Length; i++)
+            {
+                if (arrPlan[i]!=null)
+                {
+                    cmbPlan.Items.Add(arrPlan[i]);
+                }
+            }
+
             cmbPlan.SelectedIndex = 0;
-
-
         }
 
         private void btnPlancarga_Click(object sender, EventArgs e)
         {
-            frmCargaPlan ventana = new frmCargaPlan();
+            frmCargaPlan ventana = new frmCargaPlan(arrPlan);
             ventana.ShowDialog();
             
         }
